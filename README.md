@@ -31,8 +31,8 @@ Step 8: Save and run the application.
 ## PROGRAM:
 ```
 Program to display animation operation”.
-Developed by:
-Registeration Number :
+Developed by: Sudharsanam R K
+Registeration Number : 212222040163
 ```
 ## activity_main.xml:
 ```xml
