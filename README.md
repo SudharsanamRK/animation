@@ -159,7 +159,23 @@ Registeration Number : 212222040163
 
 </RelativeLayout>
 ```
-## blink_animation.xml
+## strings.xml:
+```xml
+<resources>
+    <string name="app_name">GFG App</string>
+    <string name="blink">BLINK</string>
+    <string name="clockwise">ROTATE</string>
+    <string name="fade">FADE</string>
+    <string name="move">MOVE</string>
+    <string name="slide">SLIDE</string>
+    <string name="zoom">ZOOM</string>
+    <string name="stop_animation">STOP ANIMATION</string>
+    <string name="course_rating">Course Rating</string>
+    <string name="course_name">Course Name</string>
+</resources>
+```
+
+## blink_animation.xml:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
@@ -171,7 +187,7 @@ Registeration Number : 212222040163
         android:repeatCount="infinite"/>
 </set>
 ```
-## fade_animation.xml
+## fade_animation.xml:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
@@ -188,7 +204,7 @@ Registeration Number : 212222040163
         android:toAlpha="0" />
 </set>
 ```
-## move_animation.xml
+## move_animation.xml:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
@@ -198,7 +214,7 @@ Registeration Number : 212222040163
         android:duration="700" />
 </set>
 ```
-## rotate_animation.xml
+## rotate_animation.xml:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
@@ -218,7 +234,7 @@ Registeration Number : 212222040163
         android:toDegrees="0" />
 </set>
 ```
-## slide_animation.xml
+## slide_animation.xml:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
@@ -231,7 +247,7 @@ Registeration Number : 212222040163
         android:toYScale="0.0" />
 </set>
 ```
-## zoom_animation.xml
+## zoom_animation.xml:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
@@ -335,9 +351,9 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-## OUTPUT
+## OUTPUT:
 ![image](https://github.com/SudharsanamRK/animation/assets/115523484/d6d04907-4e5e-4495-abfd-7699ee4ed3ad)
 
 
-## RESULT
+## RESULT:
 Thus a Simple Android Application to add animations: Move, blink, fade, clockwise, zoom, slide operations using Android Studio is developed and executed successfully.
