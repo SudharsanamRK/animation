@@ -261,6 +261,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         imageView = findViewById(R.id.imageview);
         blinkBTN = findViewById(R.id.BTNblink);
+```
+```
         rotateBTN = findViewById(R.id.BTNrotate);
         fadeBTN = findViewById(R.id.BTNfade);
         moveBTN = findViewById(R.id.BTNmove);
