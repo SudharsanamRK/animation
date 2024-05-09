@@ -58,8 +58,6 @@ Registeration Number : 212222040163
             style="@style/TextAppearance.AppCompat.Widget.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-```
-```
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:padding="3dp"
@@ -261,8 +259,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         imageView = findViewById(R.id.imageview);
         blinkBTN = findViewById(R.id.BTNblink);
-```
-```
         rotateBTN = findViewById(R.id.BTNrotate);
         fadeBTN = findViewById(R.id.BTNfade);
         moveBTN = findViewById(R.id.BTNmove);
