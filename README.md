@@ -53,13 +53,13 @@ Registeration Number : 212222040163
         android:orientation="horizontal"
         android:weightSum="3">
         <!--To start the blink animation of the image-->
-```
-```
         <Button
             android:id="@+id/BTNblink"
             style="@style/TextAppearance.AppCompat.Widget.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+```
+```
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:padding="3dp"
