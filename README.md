@@ -10,23 +10,16 @@ To develop a application to add animation to imageview,move,blink,fade,clockwise
 Android Studio(Latest Version)
 
 ## ALGORITHM:
-
+```
 Step 1: Open Android Studio and then click on File -> New -> New project.
-
 Step 2: Then type the Application name as "androidanimation" and click Next.
-
 Step 3: Then select the Minimum SDK as shown below and click Next.
-
 Step 4: Then select the Empty Activity and click Next. Finally click Finish.
-
 Step 5: Design layout in activity_main.xml.
-
 Step 6: Create a anim folder under res and create the xml files for the animation operators.
-
 Step 7: Add animation operations in MainActivity file.
-
 Step 8: Save and run the application.
-
+```
 
 ## PROGRAM:
 ```
@@ -43,7 +36,6 @@ Registeration Number : 212222040163
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <ImageView
         android:id="@+id/imageview"
         android:layout_width="250dp"
@@ -52,7 +44,6 @@ Registeration Number : 212222040163
         android:layout_marginTop="100dp"
         android:contentDescription="@string/app_name"
         android:src="@drawable/mohammadbincar" />
-
     <LinearLayout
         android:id="@+id/linear1"
         android:layout_width="match_parent"
@@ -61,7 +52,6 @@ Registeration Number : 212222040163
         android:layout_marginTop="150dp"
         android:orientation="horizontal"
         android:weightSum="3">
-
         <!--To start the blink animation of the image-->
         <Button
             android:id="@+id/BTNblink"
@@ -73,7 +63,6 @@ Registeration Number : 212222040163
             android:padding="3dp"
             android:text="@string/blink"
             android:textColor="@color/white" />
-
         <!--To start the rotate animation of the image-->
         <Button
             android:id="@+id/BTNrotate"
@@ -85,7 +74,6 @@ Registeration Number : 212222040163
             android:padding="3dp"
             android:text="@string/clockwise"
             android:textColor="@color/white" />
-
         <!--To start the fading animation of the image-->
         <Button
             android:id="@+id/BTNfade"
@@ -97,7 +85,6 @@ Registeration Number : 212222040163
             android:padding="3dp"
             android:text="@string/fade"
             android:textColor="@color/white" />
-
     </LinearLayout>
     <LinearLayout
         android:id="@+id/linear2"
@@ -107,7 +94,6 @@ Registeration Number : 212222040163
         android:layout_marginTop="30dp"
         android:orientation="horizontal"
         android:weightSum="3">
-
         <!--To start the move animation of the image-->
         <Button
             android:id="@+id/BTNmove"
@@ -119,7 +105,6 @@ Registeration Number : 212222040163
             android:padding="3dp"
             android:text="@string/move"
             android:textColor="@color/white" />
-
         <!--To start the slide animation of the image-->
         <Button
             android:id="@+id/BTNslide"
@@ -131,7 +116,6 @@ Registeration Number : 212222040163
             android:padding="3dp"
             android:text="@string/slide"
             android:textColor="@color/white" />
-
         <!--To start the zoom animation of the image-->
         <Button
             android:id="@+id/BTNzoom"
@@ -143,9 +127,7 @@ Registeration Number : 212222040163
             android:padding="3dp"
             android:text="@string/zoom"
             android:textColor="@color/white" />
-
     </LinearLayout>
-
     <!--To stop the animation of the image-->
     <Button
         android:id="@+id/BTNstop"
@@ -156,7 +138,6 @@ Registeration Number : 212222040163
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
         android:text="@string/stop_animation" />
-
 </RelativeLayout>
 ```
 ## strings.xml:
@@ -196,7 +177,6 @@ Registeration Number : 212222040163
         android:duration="1000"
         android:fromAlpha="0"
         android:toAlpha="1" />
-
     <alpha
         android:duration="1000"
         android:fromAlpha="1"
@@ -224,7 +204,6 @@ Registeration Number : 212222040163
         android:pivotX="50%"
         android:pivotY="50%"
         android:toDegrees="360" />
-
     <rotate
         android:duration="6000"
         android:fromDegrees="360"
@@ -264,7 +243,6 @@ Registeration Number : 212222040163
 ## MainActivity_java:
 ```java
 package com.example.androidanimation;
-
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -272,12 +250,9 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
-
 public class MainActivity extends AppCompatActivity {
-
     ImageView imageView;
     Button blinkBTN, rotateBTN, fadeBTN, moveBTN, slideBTN, zoomBTN, stopBTN;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -290,7 +265,6 @@ public class MainActivity extends AppCompatActivity {
         slideBTN = findViewById(R.id.BTNslide);
         zoomBTN = findViewById(R.id.BTNzoom);
         stopBTN = findViewById(R.id.BTNstop);
-
         blinkBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -299,7 +273,6 @@ public class MainActivity extends AppCompatActivity {
                 imageView.startAnimation(animation);
             }
         });
-
         rotateBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
